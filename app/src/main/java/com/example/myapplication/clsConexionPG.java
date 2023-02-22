@@ -12,6 +12,7 @@ public class clsConexionPG {
 
         try {
             Class.forName("org.postgresql.Driver");
+            // wach host name "localhost" shih ola ksni n7t chi ip tma
             connexion = DriverManager.getConnection("jdbc:postgresql://localhost:5432/ATTIRE", "openpg", "openpgpwd");
             Log.i("info","after driver");
         } catch (SQLException e) {
